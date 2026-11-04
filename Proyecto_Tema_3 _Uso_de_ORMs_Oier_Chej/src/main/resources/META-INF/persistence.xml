@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence xmlns="https://jakarta.ee/xml/ns/persistence" version="3.0">
     <persistence-unit name="default">
+
+        <class>Models.Proveedores</class>
+        <class>Models.Piezas</class>
+        <class>Models.Proyectos</class>
+        <class>Models.Gestion</class>
+
         <properties>
             <property name="hibernate.connection.url"
-                      value="jdbc:mariadb://localhost:3306/AD_aulavirtual"/>
+                      value="jdbc:mariadb://localhost:3306/AD_proyectos"/>
             <property name="hibernate.connection.driver_class"
                       value="org.mariadb.jdbc.Driver"/>
             <property name="hibernate.connection.username"
@@ -17,8 +23,6 @@
             <property name="hibernate.hbm2ddl.auto"
                       value="update"/>
         </properties>
-
-
 
     </persistence-unit>
 </persistence>

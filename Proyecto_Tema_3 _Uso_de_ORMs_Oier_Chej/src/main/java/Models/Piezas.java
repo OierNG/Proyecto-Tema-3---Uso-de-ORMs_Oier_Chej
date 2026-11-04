@@ -1,11 +1,9 @@
 package Models;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 
+@Entity
 public class Piezas {
 
 
@@ -22,6 +20,9 @@ public class Piezas {
 
     @NotNull
     private String descripcion;
+
+    Piezas(){}
+
 
 
     public String getDescripcion() {

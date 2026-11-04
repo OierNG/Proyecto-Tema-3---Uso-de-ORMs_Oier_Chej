@@ -3,10 +3,10 @@ version: '3.8'
 services:
   mariadb:
     image: mariadb:10.11
-    container_name: ad_aulavirtual_db
+    container_name: ad_proyectos_db
     environment:
       MYSQL_ROOT_PASSWORD: 12345Abcde
-      MYSQL_DATABASE: AD_aulavirtual
+      MYSQL_DATABASE: AD_proyectos
     ports:
       - "3306:3306"
     volumes:
